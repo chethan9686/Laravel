@@ -30,7 +30,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('Update:Meeting')->twiceDaily(12, 21);
         $schedule->command('MOM:Reminder')->hourly();
         $schedule->command('Daily:Wishes')->dailyAt('02:00');
-        $schedule->command('Update:Attendence')->everyMinute();
+       // $schedule->command('Update:Attendence')->everyMinute();
     }
 
     /**
