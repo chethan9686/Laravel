@@ -1,0 +1,320 @@
+Delivered-To: snehaa@wingsevents.com
+Received: by 2002:a2e:8e79:0:0:0:0:0 with SMTP id t25csp5800082ljk;
+        Tue, 26 May 2020 01:56:46 -0700 (PDT)
+X-Received: by 2002:a1f:1188:: with SMTP id 130mr194969vkr.25.1590483406508;
+        Tue, 26 May 2020 01:56:46 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1590483406; cv=none;
+        d=google.com; s=arc-20160816;
+        b=YrQLibgDt6gleS9i9t4fYuaKbACoJOWqnv65emeMEJVStWKn4eLQgK3V6WB0evVY0L
+         uI2SpiJ6dC9S9aMsLWZD2z4V4ef50Oc3Tzu8nDgCqHLw0WpnOXeGcTbjI4HGpayF92wm
+         hslVTNr+XB7T6a7pxfMw+FM91keWo0XVuKq9kt/XEY7UVvFj3MCAV4g/n03xmLjC/EjB
+         G4bKYzI6YNQsrgHQEStgBP9b5VWnEc7EgjZl7HLUV+lNP3ne1Lmu1P0RkqZhTF5M5Ohl
+         3aWXHULko7a6UHXf5+ANxe4kWfNFNDOxiWM0zfR08T1hIlaFFBeoL0qm9sIE2k9IppRk
+         PF6w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:dkim-signature;
+        bh=38LzFxxy1/fmPu6DEmVRjhUKfMlu7zxHMspXOxPldIc=;
+        b=DfX5iR1g4L+CVNrEWKhynWDUWr4a8bMySP3zv/o0eAM1N0d1dIGDS7lCm7jbgRkJcq
+         IK6JQRxJkEk2CB8GlrQse/ZiCGdSla0qezMScYAAarFo4b+kfwMCKkGoSTqWzhblWWFy
+         ta/vdiycDsiRptvM+oL2cli+s838mqA4g2SqmI8pprXZcJWiijigs/YGLNt26BcdrqcG
+         mObuuEMRwKG2+4RSVbEyV6ByUlzOMW+ro9cJhYxAlJG2yT3gVh8Yh6SqvZuglwfFHK9A
+         29jp7XBfncShLf5pd3n+wZ7OfVWqo+X5mgJpBDT6RvTWJVgjYCHPFD2mQIKjNjr3ea2Q
+         GxlA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@diversey.com header.s=google header.b=hGlhYWVW;
+       spf=pass (google.com: domain of kavita.kuldhar@diversey.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kavita.kuldhar@diversey.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=diversey.com
+Return-Path: <kavita.kuldhar@diversey.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id x186sor9220080vkc.66.2020.05.26.01.56.46
+        for <snehaa@wingsevents.com>
+        (Google Transport Security);
+        Tue, 26 May 2020 01:56:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kavita.kuldhar@diversey.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@diversey.com header.s=google header.b=hGlhYWVW;
+       spf=pass (google.com: domain of kavita.kuldhar@diversey.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kavita.kuldhar@diversey.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=diversey.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=diversey.com; s=google;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to
+         :cc;
+        bh=38LzFxxy1/fmPu6DEmVRjhUKfMlu7zxHMspXOxPldIc=;
+        b=hGlhYWVWwC6XJ/5qDv0IJM2j6BnVWIVPLdbd6r01nVyEFZ0EEZZwgGHqLsA6qfYEgi
+         YvY9/k/t6SLKBX8/hv9vBN2XEM7j88v7dK38gy9R+htNddzcvjRQVa21d9WXZMxFd/oZ
+         8Af+oA09RsS1EGrOF/eksTmvmrL3AOmNx7Lcw=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to:cc;
+        bh=38LzFxxy1/fmPu6DEmVRjhUKfMlu7zxHMspXOxPldIc=;
+        b=i4FNosk94Y2Z8ATanxziHE6273dbBFCoA3Gr1URKrYBAtERMuLCkjMMUPyN+8lcsSE
+         TYZGtmogzTp8bEZ6Vr1W/22nL7xaeXdTgwnDDCUTWIuqCqioIw9/0bDFF6vIpGag1S+f
+         ClE2/lSMlgPsZUekYkdtq1mzRmBJDVCFuafr+OyQTZlhRRoolCeZ1cfv2c1j0PJsnUMR
+         lotaZAglbOQWbbnYVQ/s+wfrAcPswafrts0ia0G37vRMvvQwN/1y7XpWpX9YBxY7W5kr
+         mxLzOBUJr4y5L9kT7kxTEGd+Ky0BXXfpqRD5eeJikNpZkHpMQFMe8xoBLsVAiPOE83Yp
+         g7eQ==
+X-Gm-Message-State: AOAM533DqtQxIoWy7qrCyWw+AFwG6XKsCB/zyVHcMtUf43aPwSKtibiG
+	0Q4CRuDecUAawwYBd5JhT3vihquCdxaG6jjA0sXlTqr2
+X-Google-Smtp-Source: ABdhPJwo3upn5gogruPxOOf48mOJSPKu4SDQ6XjQLHG6OqUPEZtlIgvSoRqMtM7tOmZO+mddHq9777jseCcX+MnCIlU=
+X-Received: by 2002:a1f:5fc5:: with SMTP id t188mr200639vkb.34.1590483405621;
+ Tue, 26 May 2020 01:56:45 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAHuUWu8v4CUfp7e0Ph43HsmG1y8ub3nK=CUjqLrt9V5hSgYaKg@mail.gmail.com>
+ <CAHuUWu8TAK8LRkAgFrdzFRkK8GYMob-H1tv5356DdssugNB=FQ@mail.gmail.com>
+ <CAHuUWu9h4Z8t8bjAt-SGvJV=gzFRkSQbUiG+nKCFB2Nk93KNMQ@mail.gmail.com>
+ <CAHuUWu_QJiKVosYxyS1wvntFsyUZPjxDNbHk8Wyi0hKaQdoqzQ@mail.gmail.com> <CAHuUWu9qzkssv7HXm+EKPCM93zzN7e3X1fz4AJHP92pZg684QA@mail.gmail.com>
+In-Reply-To: <CAHuUWu9qzkssv7HXm+EKPCM93zzN7e3X1fz4AJHP92pZg684QA@mail.gmail.com>
+From: Kavita Kuldhar <kavita.kuldhar@diversey.com>
+Date: Tue, 26 May 2020 14:26:32 +0530
+Message-ID: <CAMMwBW+2PbX1Hdzt2U7AUypbDdc9_Maa2K11AFJ_U0fSv_HdgQ@mail.gmail.com>
+Subject: Re: Commercials for sticker printing
+To: Snehaa Mumbai <snehaa@wingsevents.com>
+Cc: Sarabjit Singh <sarabjit@wingsevents.com>
+Content-Type: multipart/alternative; boundary="0000000000006a05a705a689466f"
+
+--0000000000006a05a705a689466f
+Content-Type: text/plain; charset="UTF-8"
+
+Designing cost is approved.
+
+Please share printable files
+
+On Tue, 26 May, 2020, 2:24 pm Snehaa Mumbai, <snehaa@wingsevents.com> wrote:
+
+> Hi Kavita,
+>
+> Please find attached the design quote
+>
+>
+> Regards
+> Snehaa
+>
+> On Tue, May 26, 2020 at 2:18 PM Snehaa Mumbai <snehaa@wingsevents.com>
+> wrote:
+>
+>> Hi Kavita,
+>>
+>>
+>> Please find attached the best negotiated rates. We will not suggest to go
+>> with a non-laminate option as it reduces the life of the sticker.
+>>
+>>
+>> Regards
+>> Snehaa
+>>
+>> On Tue, May 26, 2020 at 11:22 AM Snehaa Mumbai <snehaa@wingsevents.com>
+>> wrote:
+>>
+>>> Dear Kavita,
+>>>
+>>> Please find attached the revised commercials
+>>>
+>>> Regards
+>>> Snehaa
+>>>
+>>> On Tue, May 26, 2020 at 11:15 AM Snehaa Mumbai <snehaa@wingsevents.com>
+>>> wrote:
+>>>
+>>>> Dear Kavita,
+>>>>
+>>>> Please find attached 2 options of commercials. Do let me know if you
+>>>> have any questions about the same.
+>>>>
+>>>> One is with laminate and one is without laminate
+>>>>
+>>>> Regards
+>>>> Snehaa
+>>>>
+>>>> On Mon, May 25, 2020 at 10:06 PM Snehaa Mumbai <snehaa@wingsevents.com>
+>>>> wrote:
+>>>>
+>>>>> Dear Kavita,
+>>>>>
+>>>>> Please find attached the commercials for printing branded stickers
+>>>>> designed by us.
+>>>>> We have not added designing charges considering we will go ahead and
+>>>>> print the stickers for you.
+>>>>>
+>>>>> Have also attached the areas we will use the stickers in the
+>>>>> presentation
+>>>>>
+>>>>> --
+>>>>> Thanks & Regards,
+>>>>>
+>>>>>
+>>>>>
+>>>>>
+>>>>
+>>>> --
+>>>> Thanks & Regards,
+>>>>
+>>>>
+>>>>
+>>>>
+>>>>
+>>>
+>>> --
+>>> Thanks & Regards,
+>>>
+>>>
+>>>
+>>>
+>>>
+>>
+>> --
+>> Thanks & Regards,
+>>
+>>
+>>
+>>
+>>
+>
+> --
+> Thanks & Regards,
+>
+>
+>
+>
+>
+
+--0000000000006a05a705a689466f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Designing cost is approved.=C2=A0<div dir=3D"auto"><br></=
+div><div dir=3D"auto">Please share printable files=C2=A0</div></div><br><di=
+v class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Tue, 26 Ma=
+y, 2020, 2:24 pm Snehaa Mumbai, &lt;<a href=3D"mailto:snehaa@wingsevents.co=
+m">snehaa@wingsevents.com</a>&gt; wrote:<br></div><blockquote class=3D"gmai=
+l_quote" style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left=
+:1ex"><div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-family:ve=
+rdana,sans-serif">Hi Kavita,</div><div class=3D"gmail_default" style=3D"fon=
+t-family:verdana,sans-serif"><br></div><div class=3D"gmail_default" style=
+=3D"font-family:verdana,sans-serif">Please find attached the design quote</=
+div><div class=3D"gmail_default" style=3D"font-family:verdana,sans-serif"><=
+br></div><div class=3D"gmail_default" style=3D"font-family:verdana,sans-ser=
+if"><br></div><div class=3D"gmail_default" style=3D"font-family:verdana,san=
+s-serif">Regards</div><div class=3D"gmail_default" style=3D"font-family:ver=
+dana,sans-serif">Snehaa=C2=A0<br></div></div><br><div class=3D"gmail_quote"=
+><div dir=3D"ltr" class=3D"gmail_attr">On Tue, May 26, 2020 at 2:18 PM Sneh=
+aa Mumbai &lt;<a href=3D"mailto:snehaa@wingsevents.com" target=3D"_blank" r=
+el=3D"noreferrer">snehaa@wingsevents.com</a>&gt; wrote:<br></div><blockquot=
+e class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px s=
+olid rgb(204,204,204);padding-left:1ex"><div dir=3D"ltr"><div class=3D"gmai=
+l_default" style=3D"font-family:verdana,sans-serif">Hi Kavita,<br></div><di=
+v class=3D"gmail_default" style=3D"font-family:verdana,sans-serif"><br></di=
+v><div class=3D"gmail_default" style=3D"font-family:verdana,sans-serif"><br=
+></div><div class=3D"gmail_default" style=3D"font-family:verdana,sans-serif=
+">Please find attached the best negotiated rates. We will not suggest to go=
+ with a non-laminate option as it reduces the life of the sticker.</div><di=
+v class=3D"gmail_default" style=3D"font-family:verdana,sans-serif"><br></di=
+v><div class=3D"gmail_default" style=3D"font-family:verdana,sans-serif"><br=
+></div><div class=3D"gmail_default" style=3D"font-family:verdana,sans-serif=
+">Regards</div><div class=3D"gmail_default" style=3D"font-family:verdana,sa=
+ns-serif">Snehaa</div></div><br><div class=3D"gmail_quote"><div dir=3D"ltr"=
+ class=3D"gmail_attr">On Tue, May 26, 2020 at 11:22 AM Snehaa Mumbai &lt;<a=
+ href=3D"mailto:snehaa@wingsevents.com" target=3D"_blank" rel=3D"noreferrer=
+">snehaa@wingsevents.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail=
+_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204=
+,204);padding-left:1ex"><div dir=3D"ltr"><div class=3D"gmail_default" style=
+=3D"font-family:verdana,sans-serif">Dear Kavita,</div><div class=3D"gmail_d=
+efault" style=3D"font-family:verdana,sans-serif"><br></div><div class=3D"gm=
+ail_default" style=3D"font-family:verdana,sans-serif">Please find attached =
+the revised commercials</div><div class=3D"gmail_default" style=3D"font-fam=
+ily:verdana,sans-serif"><br></div><div class=3D"gmail_default" style=3D"fon=
+t-family:verdana,sans-serif">Regards</div><div class=3D"gmail_default" styl=
+e=3D"font-family:verdana,sans-serif">Snehaa</div></div><br><div class=3D"gm=
+ail_quote"><div dir=3D"ltr" class=3D"gmail_attr">On Tue, May 26, 2020 at 11=
+:15 AM Snehaa Mumbai &lt;<a href=3D"mailto:snehaa@wingsevents.com" target=
+=3D"_blank" rel=3D"noreferrer">snehaa@wingsevents.com</a>&gt; wrote:<br></d=
+iv><blockquote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;bord=
+er-left:1px solid rgb(204,204,204);padding-left:1ex"><div dir=3D"ltr"><div =
+class=3D"gmail_default" style=3D"font-family:verdana,sans-serif">Dear Kavit=
+a,</div><div class=3D"gmail_default" style=3D"font-family:verdana,sans-seri=
+f"><br></div><div class=3D"gmail_default" style=3D"font-family:verdana,sans=
+-serif">Please find attached 2 options of commercials. Do let me know if yo=
+u have any questions about the same.</div><div class=3D"gmail_default" styl=
+e=3D"font-family:verdana,sans-serif"><br></div><div class=3D"gmail_default"=
+ style=3D"font-family:verdana,sans-serif">One is with laminate and one is w=
+ithout laminate</div><div class=3D"gmail_default" style=3D"font-family:verd=
+ana,sans-serif"><br></div><div class=3D"gmail_default" style=3D"font-family=
+:verdana,sans-serif">Regards</div><div class=3D"gmail_default" style=3D"fon=
+t-family:verdana,sans-serif">Snehaa</div></div><br><div class=3D"gmail_quot=
+e"><div dir=3D"ltr" class=3D"gmail_attr">On Mon, May 25, 2020 at 10:06 PM S=
+nehaa Mumbai &lt;<a href=3D"mailto:snehaa@wingsevents.com" target=3D"_blank=
+" rel=3D"noreferrer">snehaa@wingsevents.com</a>&gt; wrote:<br></div><blockq=
+uote class=3D"gmail_quote" style=3D"margin:0px 0px 0px 0.8ex;border-left:1p=
+x solid rgb(204,204,204);padding-left:1ex"><div dir=3D"ltr"><div class=3D"g=
+mail_default" style=3D"font-family:verdana,sans-serif">Dear Kavita,<br clea=
+r=3D"all"></div><div class=3D"gmail_default" style=3D"font-family:verdana,s=
+ans-serif"><br></div><div class=3D"gmail_default" style=3D"font-family:verd=
+ana,sans-serif">Please find attached the commercials for printing branded s=
+tickers designed by us.=C2=A0</div><div class=3D"gmail_default" style=3D"fo=
+nt-family:verdana,sans-serif">We have not added designing charges consideri=
+ng we will go ahead and print the stickers for you.</div><div><br></div><di=
+v><div class=3D"gmail_default" style=3D"font-family:verdana,sans-serif">Hav=
+e also attached the areas we will use the stickers in the presentation</div=
+><br></div>-- <br><div dir=3D"ltr"><div dir=3D"ltr"><div><div dir=3D"ltr"><=
+div><div dir=3D"ltr"><div><div dir=3D"ltr"><span style=3D"font-family:verda=
+na,sans-serif">Thanks &amp; Regards,</span><span style=3D"font-family:verda=
+na,sans-serif"><br></span></div><div dir=3D"ltr"><span style=3D"font-family=
+:verdana,sans-serif"><img src=3D"https://docs.google.com/uc?export=3Ddownlo=
+ad&amp;id=3D1rfuElDmy8GhSU5WQycj6vcO5Fny8efOR&amp;revid=3D0B3mpqjUfTtpNcytZ=
+WlQ0alNkVGgrcjNJZU1FWW1XMjh0L0lJPQ" width=3D"200" height=3D"61"></span><fon=
+t face=3D"verdana, sans-serif"><br></font></div><div dir=3D"ltr"><span styl=
+e=3D"font-family:verdana,sans-serif"><br></span></div><div dir=3D"ltr"><fon=
+t face=3D"verdana, sans-serif"></font><div><div><br></div></div></div></div=
+></div></div></div></div></div></div></div>
+</blockquote></div><br clear=3D"all"><div><br></div>-- <br><div dir=3D"ltr"=
+><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=
+=3D"ltr"><span style=3D"font-family:verdana,sans-serif">Thanks &amp; Regard=
+s,</span><span style=3D"font-family:verdana,sans-serif"><br></span></div><d=
+iv dir=3D"ltr"><span style=3D"font-family:verdana,sans-serif"><img src=3D"h=
+ttps://docs.google.com/uc?export=3Ddownload&amp;id=3D1rfuElDmy8GhSU5WQycj6v=
+cO5Fny8efOR&amp;revid=3D0B3mpqjUfTtpNcytZWlQ0alNkVGgrcjNJZU1FWW1XMjh0L0lJPQ=
+" width=3D"200" height=3D"61"></span><font face=3D"verdana, sans-serif"><br=
+></font></div><div dir=3D"ltr"><span style=3D"font-family:verdana,sans-seri=
+f"><br></span></div><div dir=3D"ltr"><font face=3D"verdana, sans-serif"></f=
+ont><div><font face=3D"verdana, sans-serif"><br></font><div><br></div></div=
+></div></div></div></div></div></div></div></div>
+</blockquote></div><br clear=3D"all"><div><br></div>-- <br><div dir=3D"ltr"=
+><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=
+=3D"ltr"><span style=3D"font-family:verdana,sans-serif">Thanks &amp; Regard=
+s,</span><span style=3D"font-family:verdana,sans-serif"><br></span></div><d=
+iv dir=3D"ltr"><span style=3D"font-family:verdana,sans-serif"><img src=3D"h=
+ttps://docs.google.com/uc?export=3Ddownload&amp;id=3D1rfuElDmy8GhSU5WQycj6v=
+cO5Fny8efOR&amp;revid=3D0B3mpqjUfTtpNcytZWlQ0alNkVGgrcjNJZU1FWW1XMjh0L0lJPQ=
+" width=3D"200" height=3D"61"></span><font face=3D"verdana, sans-serif"><br=
+></font></div><div dir=3D"ltr"><span style=3D"font-family:verdana,sans-seri=
+f"><br></span></div><div dir=3D"ltr"><font face=3D"verdana, sans-serif"></f=
+ont><div><font face=3D"verdana, sans-serif"><br></font><div><br></div></div=
+></div></div></div></div></div></div></div></div>
+</blockquote></div><br clear=3D"all"><div><br></div>-- <br><div dir=3D"ltr"=
+><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=
+=3D"ltr"><span style=3D"font-family:verdana,sans-serif">Thanks &amp; Regard=
+s,</span><span style=3D"font-family:verdana,sans-serif"><br></span></div><d=
+iv dir=3D"ltr"><span style=3D"font-family:verdana,sans-serif"><img src=3D"h=
+ttps://docs.google.com/uc?export=3Ddownload&amp;id=3D1rfuElDmy8GhSU5WQycj6v=
+cO5Fny8efOR&amp;revid=3D0B3mpqjUfTtpNcytZWlQ0alNkVGgrcjNJZU1FWW1XMjh0L0lJPQ=
+" width=3D"200" height=3D"61"></span><font face=3D"verdana, sans-serif"><br=
+></font></div><div dir=3D"ltr"><span style=3D"font-family:verdana,sans-seri=
+f"><br></span></div><div dir=3D"ltr"><font face=3D"verdana, sans-serif"></f=
+ont><div><font face=3D"verdana, sans-serif"><br></font><div><br></div></div=
+></div></div></div></div></div></div></div></div>
+</blockquote></div><br clear=3D"all"><div><br></div>-- <br><div dir=3D"ltr"=
+><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=
+=3D"ltr"><span style=3D"font-family:verdana,sans-serif">Thanks &amp; Regard=
+s,</span><span style=3D"font-family:verdana,sans-serif"><br></span></div><d=
+iv dir=3D"ltr"><span style=3D"font-family:verdana,sans-serif"><img src=3D"h=
+ttps://docs.google.com/uc?export=3Ddownload&amp;id=3D1rfuElDmy8GhSU5WQycj6v=
+cO5Fny8efOR&amp;revid=3D0B3mpqjUfTtpNcytZWlQ0alNkVGgrcjNJZU1FWW1XMjh0L0lJPQ=
+" width=3D"200" height=3D"61"></span><font face=3D"verdana, sans-serif"><br=
+></font></div><div dir=3D"ltr"><span style=3D"font-family:verdana,sans-seri=
+f"><br></span></div><div dir=3D"ltr"><font face=3D"verdana, sans-serif"></f=
+ont><div><font face=3D"verdana, sans-serif"><br></font><div><br></div></div=
+></div></div></div></div></div></div></div></div>
+</blockquote></div>
+
+--0000000000006a05a705a689466f--
